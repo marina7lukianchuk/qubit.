@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Qubit. </title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+<section class="header-hero section"> 
+    <header class="header"> 
+        <a class="logo_header" href="#">  
+            <svg class="logo" width="79" height="24" viewBox="0 0 79 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M0 0H79V24H0V0Z" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_105" transform="translate(-0.00632911) scale(0.00202532 0.00666667)"/>
+                </pattern>
+                <image id="image0_1_105" width="500" height="150" xlink:href="data:image/png;base64,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"/>
+                </defs>
+            </svg>                
+        </a>
+        <nav class="nav_header">
+            <a class="link_header" href="#"> Why Qubit? </a>
+            <a class="link_header" href="#"> Products </a>
+            <a class="link_header" href="#"> Solutions </a>
+            <a class="link_header" href="#"> Customers </a>
+            <a class="link_header" href="#"> Case studies </a>
+            <a class="link_header" href="#"> Resources </a>
+            <a class="link_header" href="#"> More </a>
+        </nav>
+        <div class="header_interaction"> 
+            <a class="button_book_link" href="https://www.facebook.com/" target="_blank">
+                <input class="button_book-demo" type="button" value="Book a demo">
+            </a>
+        <a class="login_link" href="#" target="_blank"> Log In </a>
+    </div>
+    </header>
+    <div class="text_hero"> 
+        <p class="suptitle-text_hero"> Driving growth with personalization. </p>
+        <h3 class="title-text_hero"> Make ecommerce </h3>
+        <h3 class="title-text_hero violet"> More personal. </h3>
+        <div class="descrip-text_hero"> <p>  Hundreds of brands use <b class="fatty_text"> Qubit CommerceAI </b>
+            to power the next generation of product recommendations, badging and insights
+             to build exceptional customer experiences. </p> </div>
+    <form class="form_input_email">
+        <input class="for_email" type="email" id="email" required placeholder="Enter your email" >
+        <button class="button_email" type="submit" > Book a demo  </button>
+    </form>
+    </div>   
+</section>
+<section class="achievement section"> 
+    <h6 class="partners_brands_title"> Trusted by world-class brands. </h6>
+    <div class="brands_logo"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle.svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (2).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (3).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (4).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (5).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (6).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (7).svg"> 
+        <img class="brand_logo_item" src="assets/img/Rectangle (8).svg"> 
+    </div>
+<a class="link_customers" href="#" target="_blank"> Meet our customers > </a>
+<div class="achievement_block"> 
+<div class="achievement_left-block"> 
+    <h3 class="achievement_title"> Grow 2.5x faster than your competitors.</h3>
+    
+        <a class="button_book_link" href="https://www.facebook.com/" target="_blank">
+            <input class="button_book-demo achievement-button" type="button" value="Book a demo">
+        </a>
+        <a class="link_customers achievement_link" href="#" target="_blank"> Meet our customers > </a>
+        <p class="over-link_text"> *PwC audited methodology. </p>
+        <a class="link_report" href="#" target="_blank"> Read the report </a>
+</div>
+<div class="achievement_right-block">
+    <div class="achievement_column">
+        <div class="achievement_column-item"> 
+        <h6 class="column-item_title"> 140% </h6>
+        <p class="column-item_text"> Qubit's top customers annual growth rate.</p>
+        </div>
+        <div class="achievement_column-item">
+            <h6 class="column-item_title"> $20bn </h6>
+            <p class="column-item_text"> Online sales generated by our customers in 2020.</p>
+             </div>
+        <div class="achievement_column-item"> 
+            <h6 class="column-item_title"> 364 </h6>
+            <p class="column-item_text"> Ecommerce stores are growing faster with Qubit. </p>
+
+        </div>
+         </div>
+    <div class="achievement_column"> 
+        <div class="achievement_column-item"> 
+            <h6 class="column-item_title"> 9.5m </h6>
+            <p class="column-item_text"> Personalized experiences delivered every hour.</p>
+        </div>
+        <div class="achievement_column-item">
+            <h6 class="column-item_title"> 4.4m </h6>
+            <p class="column-item_text"> Shoppers influenced by Qubit every day.</p>
+        </div>
+        <div class="achievement_column-item">
+            <h6 class="column-item_title"> $1.6bn </h6>
+            <p class="column-item_text"> Incremental revenue generated by our customers in 2020.*</p> </div>
+    </div>
+   </div>
+</div>
+<div class="commerceal_block"> 
+    <h3 class="commerceal_block_title"> Qubit CommerceAI. </h3>
+    <sub class="commerceal_block_subtitle"> The new way to drive growth. </sub>
+    <div class="commerceal_items-wrapper"> 
+        <div class="commerceal_item">
+            <img class="commerceal_items-icon" src="assets/img/Comm1.svg" alt="icon">
+            <h6 class="commerceal_items-title"> More insight </h6>
+            <p class="commerceal_items-text"> Learn which products drive performance and
+                which don't, 
+                through automated insights you can action. </p>
+        
+        </div>
+        <div class="commerceal_item">
+            <img class="commerceal_items-icon" src="assets/img/Comm2.svg" alt="icon">
+            <h6 class="commerceal_items-title"> More personal </h6>
+            <p class="commerceal_items-text"> Qubit CommerceAI generates a model per 
+                shopper to make every customer interaction more relevant. </p>
+        </div>
+        <div class="commerceal_item">
+            <img class="commerceal_items-icon" src="assets/img/Comm3.svg" alt="icon">
+            <h6 class="commerceal_items-title"> More effective </h6>
+            <p class="commerceal_items-text"> Qubit fuses data, intent, and design tools
+                 to enable your team to create more effective customer experiences. </p>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="screen section"> 
+    <h3 class="screen_title"> All the power. Easy to use. </h3>
+    <p class="screen_subtitle"> By collaborating with real ecommerce teams we've built
+         the next-gen personalization tool. No code. No clunkiness. </p>
+         <div class="screen_image_wrapper"> 
+         <img class="screen_image" src="assets/img/Screen.jpg" alt="screen"> 
+        </div>
+        <div class="screen_buttons_wrap"> 
+            <a class="button_products_link" href="https://www.facebook.com/" target="_blank">
+                <input class="button_products" type="button" value="See products">
+            </a>
+            <a class="button_book_link" href="https://www.facebook.com/" target="_blank">
+                <input class="button_book-demo screen_button" type="button" value="Book a demo">
+            </a>
+        </div>
+</section>
+<section class="can_do section"> 
+    <h3 class="can_do-title"> What you can do with Qubit. </h3> 
+    <div class="can_do_items-wrapper"> 
+        <div class="can_do_item"> 
+        <img class="can_do_icon" src="assets/img/can0.svg" alt="icon">
+        <h6 class="can_do_titles"> 1:1 Product recommendations </h6>
+        <p class="can_do_item-text"> Use deep learning recommendations to
+             engage customers in seconds. </p>
+        </div>
+        <div class="can_do_item"> 
+            <img class="can_do_icon" src="assets/img/can.svg" alt="icon">
+            <h6 class="can_do_titles"> 1:1 Product badging </h6>
+            <p class="can_do_item-text"> Guide discovery with personalized product badging.
+                 Push sales with social proofing. </p>
+        </div>
+        <div class="can_do_item"> 
+            <img class="can_do_icon" src="assets/img/can2.svg" alt="icon">
+            <h6 class="can_do_titles"> Personalized content </h6>
+            <p class="can_do_item-text"> Your customers are unique. Present them with 
+                content that shows you know them. </p>
+        </div>
+        <div class="can_do_item"> 
+            <img class="can_do_icon" src="assets/img/can3.svg" alt="icon">
+            <h6 class="can_do_titles"> Product insights </h6>
+            <p class="can_do_item-text"> A platform packed with insights helping you discover 
+                the hard hitting things you can do next.</p>
+        </div>
+        <div class="can_do_item"> 
+            <img class="can_do_icon" src="assets/img/can4.svg" alt="icon">
+            <h6 class="can_do_titles"> CommerceAI </h6>
+            <p class="can_do_item-text">Your customer's behavioral data is telling you a story. Use predictive and affinity 
+                based algorithms to serve them better. </p>
+        </div>
+        <div class="can_do_item"> 
+            <img class="can_do_icon" src="assets/img/can5.svg" alt="icon">
+            <h6 class="can_do_titles"> Platform integrations </h6>
+            <p class="can_do_item-text"> Connect Qubit to any tool via API. Import data or 
+                trigger an experience on any platform. </p>
+        </div>
+    </div>
+</section>
+<section class="trusted_brands section"> 
+    <h3 class="trusted_brands_title"> Trusted by leading brands. </h3>
+    <div class="trusted_brands_wrapper"> 
+        <div class="trusted_brands-item">
+         <img class="trusted_brands-photo" src="assets/img/trusted.jpg" alt="photo">
+         <img class="trusted_brands-logo" src="assets/img/tl1.svg" alt="logo">
+         <p class="trusted_brands-text"> Clinique builds relationships
+             with millions of customers each year. </p>
+             </div>
+        <div class="trusted_brands-item"> 
+            <img class="trusted_brands-photo" src="assets/img/trusted2.jpg" alt="photo">
+            <img class="trusted_brands-logo" src="assets/img/tl2.svg" alt="logo">
+            <p class="trusted_brands-text"> River Island transforms the customer 
+                experience with personalization. </p>
+        </div>
+        <div class="trusted_brands-item"> 
+            <img class="trusted_brands-photo" src="assets/img/trusted3.jpg" alt="photo">
+            <img class="trusted_brands-logo3" src="assets/img/tl3.svg" alt="logo">
+            <p class="trusted_brands-text"> MandM Direct drives increase 
+                in revenue with deep learning recs </p>
+        </div>
+    </div>
+</section>
+<section class="specialize section"> 
+    <h3 class="specialize_title"> We specialize in your industry. </h3>
+    <p class="specialize_subtitle"> Learn how we are delivering 
+        personalization at scale across sectors. </p>
+    <div class="specialize_items_wrapper"> 
+        <div class="specialize_item"> 
+            <div class="specialize_item-header">
+            <img class="specialize_icon" src="assets/img/si.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Beauty and cosmetics </h6>
+            </div>
+            <p class="specialize_item-text"> Discover relevant products. Push samples.
+                 Upsell and replenish. </p>
+            <p class="specialize_under-text" > Explore our solutions for beauty
+                 and cosmetics. </p>    
+        </div>
+        <div class="specialize_item"> 
+            <div class="specialize_item-header">
+            <img class="specialize_icon" src="assets/img/si1.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Fashion </h6>
+            </div>
+            <p class="specialize_item-text"> Supercharge merchandising. 
+                Reach your best customers. </p>
+                <p class="specialize_under-text" > Explore our solutions for fashion. </p> 
+
+        </div>
+        <div class="specialize_item">
+            <div class="specialize_item-header">
+            <img class="specialize_icon" src="assets/img/si2.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Luxury </h6>
+            </div>
+            <p class="specialize_item-text"> Drive brand experience online. 
+                Look after your VIPs. </p>
+                <p class="specialize_under-text explore" > Explore our solutions for luxury. </p> 
+            
+
+        </div>
+        <div class="specialize_item"> 
+            <div class="specialize_item-header">
+            <img class="specialize_icon" src="assets/img/si3.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Airlines </h6>
+            </div>
+            <p class="specialize_item-text">  Increase loyalty. Boost ancillary sales.
+                 Capture every opportunity.</p>
+                 <p class="specialize_under-text" > Explore our solutions for airlines. </p> 
+
+        </div>
+        <div class="specialize_item"> 
+            <div class="specialize_item-header">
+            <img class="specialize_icon" src="assets/img/si4.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Travel & tourism </h6>
+            </div>
+            <p class="specialize_item-text"> Be persuasive. Inspire travellers.
+                 Drive revenue. </p>
+                 <p class="specialize_under-text explore" > Explore our solutions for travel and tourism. </p> 
+
+        </div>
+        <div class="specialize_item">  
+            <div class="specialize_item-header"> 
+            <img class="specialize_icon" src="assets/img/si5.svg" alt="icon"> 
+            <h6 class="specialize_item-title"> Online betting </h6>
+        </div>
+            <p class="specialize_item-text"> Bring events to life. Personalize in real time. 
+                Be responsible. </p>
+                <p class="specialize_under-text" > Explore our solutions for online betting. </p> 
+        </div>
+    </div>   
+</section>
+<section class="connected_ecosystem section"> 
+    <div class="left-block_ecosystem"> 
+    <h3 class="connected_ecosystem_title"> A connected ecosystem. </h3>
+    <p class="connected_ecosystem_subtitle"> The Qubit personalization platform is designed with 
+        enterprise and high-growth businesses in mind. </p>
+    <p class="connected_ecosystem_subtitle under_sub">  Our open ecosystem approach means you
+         can connect any data source and deliver personalization across any channel. </p>
+         <a class="button_ecosystem_link" href="https://www.facebook.com/" target="_blank">
+            <input class="button_products ecosystem_button" type="button" value="See our integrations">
+        </a>
+    </div>
+    <div class="right-block_ecosystem"> 
+        <img class="connected_ecosystem-photo" src="assets/img/ecos.svg" alt="photo">
+    </div> 
+</section>
+<section class="book_demo section"> 
+    <h3 class="book_demo_title"> Book a demo today. </h3>
+    <form class="form_input_email">
+        <input class="for_email bookdemo_input" type="email" id="email" required placeholder="Enter your email" >
+        <button class="button_email" type="submit" > Book a demo  </button>
+    </form>
+</section>
+<section class="connect_social section"> 
+    <img class="connect_social-image" src="assets/img/connect.svg" alt="image">
+    <h6 class="connect_social_title"> Connect with us </h6>
+    <div class="social-icon_wrapper"> 
+    <a class="social_link" href="#" target="_blank"> 
+    <span class="social_icon icon-fb"> </span>
+    </a>
+    <a class="social_link" href="#" target="_blank"> 
+    <span class="social_icon icon-tw"> </span>
+</a>
+    <a class="social_link" href="#" target="_blank"> 
+    <span class="social_icon icon-in"> </span>
+</a>
+    <a class="social_link" href="#" target="_blank"> 
+    <span class="social_icon icon-inst"> </span>
+</a>
+    <a class="social_link" href="#" target="_blank"> 
+    <span class="social_icon icon-yb"> </span>
+</a>
+</div>
+</section>
+<footer class="footer section"> 
+    <div class="footer_link_wrapper"> 
+    <div class="footer_block_capabilities"> 
+        <div class="capabilities_left-column"> 
+            <h6 class="capabilities_title title_footer"> Featured Capabilities </h6>
+            <a class="capabilities_link footer_link" href="#"> A/B testing  </a> 
+            <a class="capabilities_link footer_link" href="#"> Abandonment recovery </a> 
+            <a class="capabilities_link footer_link" href="#"> Customer insights </a> 
+            <a class="capabilities_link footer_link" href="#"> Customer polling and feedback </a> 
+            <a class="capabilities_link footer_link" href="#"> Customer segmentation </a> 
+            <a class="capabilities_link footer_link" href="#"> Data collection </a> 
+            <a class="capabilities_link footer_link" href="#"> Ecommerce merchandising </a> 
+
+        </div>
+        <div class="capabilities_right-column"> 
+            <a class="capabilities_link footer_link" href="#"> Custom machine learning  </a> 
+            <a class="capabilities_link footer_link" href="#"> Journey Personalization  </a> 
+            <a class="capabilities_link footer_link" href="#"> Mobile app personalization  </a> 
+            <a class="capabilities_link footer_link" href="#"> Cross-channel personalization  </a> 
+            <a class="capabilities_link footer_link" href="#"> Social proofing </a> 
+            <a class="capabilities_link footer_link" href="#"> Website personalization  </a> 
+        </div>
+    </div>
+    <div class="footer_block_products">
+        <h6 class="products_footer_title title_footer"> Products </h6>
+        <a class="products_link footer_link" href="#"> 1:1 Product recommendations  </a> 
+        <a class="products_link footer_link" href="#"> 1:1 Product badging  </a> 
+        <a class="products_link footer_link" href="#"> 1:1 Journey personalization  </a> 
+        <a class="products_link footer_link" href="#"> Personalized content  </a> 
+        <a class="products_link footer_link" href="#"> Product insights </a> 
+    </div>
+  <div class="footer_block_resources"> 
+    <h6 class="resources_footer_title title_footer"> Resources </h6>
+    <a class="resources_link footer_link" href="#"> Resources  </a> 
+    <a class="resources_link footer_link" href="#"> Customers  </a> 
+    <a class="resources_link footer_link" href="#"> Qubit Blog.  </a> 
+    <a class="resources_link footer_link" href="#"> Glossary </a> 
+  </div>
+
+  <div class="footer_block_company"> 
+    <h6 class="company_footer_title title_footer"> Company </h6>
+    <a class="company_link footer_link" href="#"> Why Qubit?  </a> 
+    <a class="company_link footer_link" href="#"> About us </a> 
+    <a class="company_link footer_link" href="#"> Careers  </a> 
+    <a class="company_link footer_link" href="#"> Press </a> 
+    <a class="company_link footer_link" href="#"> Contact </a> 
+  </div>
+  <div class="footer_block_company">
+    <a class="last_footer_link footer_link" href="#"> Working with us  </a> 
+    <a class="last_footer_link footer_link" href="#"> Legal </a> 
+     </div>
+    </div>
+<div class="footer_logo">
+        <svg class="logo_footer" width="73" height="21" viewBox="0 0 73 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M0 0H73V21H0V0Z" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_750" transform="translate(0 -0.00694444) scale(0.00347222 0.0120701)"/>
+            </pattern>
+            <image id="image0_1_750" width="288" height="84" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>                      
+  <p class="footer_logo_subtext"> © 2021 Qubit. All rights reserved. </p>
+</div>
+</footer>
+    
+</body>
+</html>
