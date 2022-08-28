@@ -951,17 +951,6 @@ body {
 
 .footer_logo {
   text-align: center;
-  position: relative;
-}
-.footer_logo::before {
-  content: " ";
-  width: 22px;
-  height: 18px;
-  background-image: url("../img/world_footer.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: -7px;
-  left: 95px;
 }
 .footer_logo .logo_footer {
   margin-bottom: 25px;
@@ -972,4 +961,18 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: #FFFFFF;
+}
+
+.footer_icon-logo {
+  position: relative;
+}
+.footer_icon-logo::before {
+  content: " ";
+  width: 22px;
+  height: 18px;
+  background-image: url("../img/world_footer.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  right: 596px;
 }

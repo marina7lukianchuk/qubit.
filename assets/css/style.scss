@@ -823,6 +823,15 @@ content: '\f318';
 
 .footer_logo {
     text-align: center;
+    .logo_footer {
+        margin-bottom: 25px;
+    }
+    .footer_logo_subtext {  
+    @include text_style ('Roboto', 13px, 30px, 400, #FFFFFF); 
+    }
+}
+
+.footer_icon-logo {
     position: relative;
     &::before {
     content: ' ';
@@ -831,13 +840,7 @@ content: '\f318';
     background-image: url('../img/world_footer.svg');
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -7px;
-    left: 95px;
-    }
-    .logo_footer {
-        margin-bottom: 25px;
-    }
-    .footer_logo_subtext {  
-    @include text_style ('Roboto', 13px, 30px, 400, #FFFFFF); 
+    bottom: 0px;
+    right: 596px;
     }
 }
