@@ -22,7 +22,7 @@ body {
   background-image: url("../img/hero_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-bottom: 35px;
+  padding-bottom: 200px;
 }
 
 .header {
@@ -138,10 +138,15 @@ body {
   font-weight: 400;
   color: #000000;
   max-width: 440px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .descrip-text_hero .fatty_text {
   font-weight: 900;
+}
+
+.form_input_email {
+  width: 100%;
+  max-width: 500px;
 }
 
 .for_email {
@@ -151,7 +156,6 @@ body {
   border-radius: 28px 0 0 28px;
   border: 1px solid #6F2CFF;
   box-shadow: #6F2CFF;
-  margin-bottom: 200px;
   opacity: 0.6;
 }
 .for_email::placeholder {
@@ -180,6 +184,7 @@ body {
 .achievement {
   text-align: center;
   align-items: center;
+  padding-top: 35px;
 }
 
 .partners_brands_title {
@@ -503,31 +508,39 @@ body {
   margin: 0 auto;
   margin-bottom: 105px;
 }
-.can_do_items-wrapper .can_do_item {
+
+.can_do_item {
   width: 100%;
   max-width: 275px;
   margin-bottom: 95px;
   text-align: center;
 }
-.can_do_items-wrapper .can_do_item .can_do_icon {
+.can_do_item .can_do_icon {
   width: 100%;
   max-width: 50px;
   max-height: 50px;
   margin: 0 auto;
 }
-.can_do_items-wrapper .can_do_item .can_do_titles {
+.can_do_item .can_do_titles {
   font-family: "Roboto";
   font-size: 19px;
   line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
-.can_do_items-wrapper .can_do_item .can_do_item-text {
+
+.can_do_item-text {
   font-family: "Roboto";
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   color: #000000;
+  display: inline-block;
+  max-width: 260px;
+}
+
+.wide_text {
+  max-width: 275px;
 }
 
 .trusted_brands {
@@ -651,9 +664,7 @@ body {
   background-color: #17002E;
   border-radius: 10px;
   margin-bottom: 30px;
-  padding-left: 30px;
-  padding-top: 12px;
-  padding-right: 50px;
+  padding: 12px 30px 0 50px;
 }
 
 .specialize_item-header {
@@ -676,7 +687,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 30px;
   margin-left: 70px;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .specialize_item-text {
@@ -696,11 +707,12 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   position: relative;
+  display: inline-block;
   margin-bottom: 34px;
 }
 .specialize_under-text::after {
   content: " ";
-  width: 360px;
+  width: 110%;
   border-bottom: 2px solid #FFFFFF;
   position: absolute;
   bottom: -9px;
@@ -708,7 +720,7 @@ body {
 }
 
 .explore {
-  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 .connected_ecosystem {
@@ -776,8 +788,13 @@ body {
   margin-bottom: 40px;
 }
 
+.book_demo-form {
+  display: block;
+  margin: 0 auto;
+}
+
 .bookdemo_input {
-  padding: 13.2px 125px 13.2px 20px;
+  padding: 13.5px 125px 13.5px 20px;
   border: 1px solid #FFFFFF;
   box-shadow: #FFFFFF;
   margin-bottom: 105px;
@@ -947,7 +964,6 @@ body {
   left: 95px;
 }
 .footer_logo .logo_footer {
-  fill: #FFFFFF;
   margin-bottom: 25px;
 }
 .footer_logo .footer_logo_subtext {
